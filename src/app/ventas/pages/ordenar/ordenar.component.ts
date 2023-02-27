@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-ordenar',
   templateUrl: './ordenar.component.html',
-  styles: [
-  ]
+  styles: [],
 })
-export class OrdenarComponent {
+export class OrdenarComponent implements OnInit {
+  EnMayusculas: boolean = true;
 
+  constructor() {}
+
+  ngOnInit(): void {}
+  handleClick() {
+    this.EnMayusculas = !this.EnMayusculas;
+  }
 }
