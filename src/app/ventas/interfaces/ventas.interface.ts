@@ -2,7 +2,7 @@ export enum Color {
   rojo,
   negro,
   azul,
-  verde,
+  verde
 }
 
 export interface Heroe {
